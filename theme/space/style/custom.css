@@ -1,0 +1,301 @@
+/*
+Author: tandatx
+Author email: dat.ngo@ttu.edu.vn
+Description: This is the file used to styles the interface
+Version: 1
+*/
+
+.course-box-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 0 !important;
+    height: 70px !important;
+}
+
+.course-box-title-txt {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
+
+a.skip-block,
+a.skip {
+    position: relative;
+}
+
+.s-top .logo img {
+    max-height: 50px;
+}
+
+#page-site-index #frontpage-available-course-list {
+    margin-top: 0;
+}
+
+#page-content h2:first-of-type,
+[role="main"] h2:first-of-type {
+    margin-bottom: 1.5rem;
+}
+
+.s-special-box .c-special-box-title {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#frontpage-available-course-list h2{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.courses-view-course-item-footer {
+    margin: 0;
+}
+
+.c-course-content {
+    padding-bottom: 1.5rem;
+}
+
+/* TOP NAVIGATION */
+#navigation {
+    display: block;
+}
+
+.navigation-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.navigation-menu>li {
+    float: left;
+    display: block;
+    position: relative;
+    margin: 0 5px;
+}
+
+.navigation-menu>li>a {
+    display: block;
+    color: #3c4858;
+    font-size: 13px;
+    background-color: transparent !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    font-family: "Nunito", sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.c-hero-without-logo {
+    margin-top: 0;
+}
+
+/* BLOCK */
+#HTMLBlock4 {
+    padding: 120px 0;
+}
+
+#HTMLBlock4 .lead p {
+    text-align: center !important;
+}
+
+/* BUTTON */
+.btn-primary,
+.btn-default,
+.allcoursegrades a,
+.createstep,
+#page-tag-search #tag-search-box form input[type="submit"],
+.notification-area .content-area .footer a,
+#changenumsections a,
+#page-admin-grade-edit-letter-index #region-main .mdl-align a,
+#page-admin-setting-webservicetokens [role="main"] fieldset a,
+.logselecform input[type="submit"],
+#page-mod-forum-subscribers .subscribertable tr td.actions .actionbutton,
+input.form-submit,
+#id_addidnumbers,
+.addbloglink a,
+.progress-actions a,
+.discussionsubscription a,
+.block .footer a,
+.mod_quiz-next-nav,
+.newlink a,
+.checkforupdates [type="submit"],
+.continuebutton [type="submit"],
+.bookexit,
+#newentryform .btn-secondary,
+#page-mod-quiz-summary .submitbtns [type="submit"],
+.path-mod-quiz .othernav a.mod_quiz-next-nav,
+#enabletemplateeditor,
+.usp-finish [type="submit"],
+.block_blog_menu [type="submit"],
+.forum-post-footer a,
+.btn-dark,
+[data-region="actions"] p a,
+.quizattemptcounts a,
+#page-enrol-index .box [type="submit"],
+#core-cache-rescan-definitions a,
+.edit-link a,
+#page-admin-mod-glossary-formats .generalbox [type="submit"],
+[data-action="addstandardtag"],
+.addcomponent,
+.editprofile span a,
+#page-mod-quiz-attempt .questionflag,
+.custompages-add,
+.section-modchooser-link,
+.s-top .login-btn,
+.sidebar-btn {
+    background-color: #076633 !important;
+    border: 1px solid #076633 !important;
+    box-shadow: none !important;
+}
+
+.btn-primary:hover,
+.btn-default:hover,
+.allcoursegrades a:hover,
+.createstep:hover,
+#page-tag-search #tag-search-box form input[type="submit"]:hover,
+.notification-area .content-area .footer a:hover,
+#changenumsections a:hover,
+#page-admin-grade-edit-letter-index #region-main .mdl-align a:hover,
+#page-admin-setting-webservicetokens [role="main"] fieldset a:hover,
+.logselecform input[type="submit"]:hover,
+#page-mod-forum-subscribers .subscribertable tr td.actions .actionbutton:hover,
+input.form-submit:hover,
+#id_addidnumbers:hover,
+.addbloglink a:hover,
+.progress-actions a:hover,
+.discussionsubscription a:hover,
+.block .footer a:hover,
+.mod_quiz-next-nav:hover,
+.newlink a:hover,
+.checkforupdates [type="submit"]:hover,
+.continuebutton [type="submit"]:hover,
+.bookexit:hover,
+#newentryform .btn-secondary:hover,
+#page-mod-quiz-summary .submitbtns [type="submit"]:hover,
+.path-mod-quiz .othernav a.mod_quiz-next-nav:hover,
+#enabletemplateeditor:hover,
+.usp-finish [type="submit"]:hover,
+.block_blog_menu [type="submit"]:hover,
+.forum-post-footer a:hover,
+.btn-dark:hover,
+[data-region="actions"] p a:hover,
+.quizattemptcounts a:hover,
+#page-enrol-index .box [type="submit"]:hover,
+#core-cache-rescan-definitions a:hover,
+.edit-link a:hover,
+#page-admin-mod-glossary-formats .generalbox [type="submit"]:hover,
+[data-action="addstandardtag"]:hover,
+.addcomponent:hover,
+.editprofile span a:hover,
+#page-mod-quiz-attempt .questionflag:hover,
+.custompages-add:hover,
+.section-modchooser-link:hover,
+.s-top .login-btn:hover,
+.sidebar-btn:hover {
+    background-color: #07582d !important;
+    border: 1px solid #07582d !important;
+    -webkit-box-shadow: 0 3px 5px 0 rgba(60, 72, 88, 0.3) !important;
+    box-shadow: 0 3px 5px 0 rgba(60, 72, 88, 0.3) !important;
+}
+p a:before, nav a:before, ul a:before, ol a:before, dt a:before, dd a:before, .tab-pane .col-3 a:before, .tab-pane .col-xs-3 a:before, [role="tabpanel"] h4 a:before, #page-user-preferences .card-body a:before, .recipename a:before{
+    background-color: #07582d;
+}
+.tns-controls [data-controls="next"],
+.tns-controls [data-controls="prev"]{
+    background-color: #07582d80;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+*:focus {
+    outline: none;
+}
+.tns-nav button{
+    background-color: #fafafa;
+    border: solid 2px #ffffff;
+    width: 20px;
+    height: 10px;
+}
+.tns-nav button:focus{
+    outline-color: transparent;
+}
+.tns-nav button.tns-nav-active {
+    background-color: #07582d;
+}
+.s-top .sticky-nav{
+    -webkit-box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
+    box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
+}
+.s-footer{
+    background-color: #fafafa;
+}
+#block1 .justify-content-sm-center{
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+#block2.section-padding,
+#block1.section-padding{
+    padding: 120px 0 0px;
+}
+#block2{
+    text-align: center;
+    
+}
+.bg-light{
+    background-color: #f8f8f8;
+}
+#block2 img{
+    width: 150px;
+}
+#theme_switch_link{
+    display: none;
+}
+@media only screen and (max-width: 767px) {
+    .c-logo-mobile .site-name{
+        line-height: 62px;
+        color: #076633;
+    }
+    #block1 .py-5{
+        padding-top: 0!important;
+        padding-bottom: 0!important;
+    }
+    #block1 .img-fluid{
+        width: 200px;
+        display: block;
+        margin: 15px auto;
+    }
+    #topBar1 .s-top-container {
+        padding-top: 230px !important;
+    }
+    .navigation-menu{
+        padding: 0;
+        display: block;
+    }
+    .navigation-menu>li {
+        float: none;
+        display: block;
+        position: static;
+        margin: 0 5px;
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        background: #f8f8f8;
+        padding: 10px;
+    }
+  }
