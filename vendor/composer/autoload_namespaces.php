@@ -7,5 +7,8 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'org\\bovigo\\vfs\\' => array($vendorDir . '/mikey179/vfsstream/src/main/php'),
-    'PHPMD\\' => array($vendorDir . '/phpmd/phpmd/src/main/php'),
+    'WebDriver' => array($vendorDir . '/instaclick/php-webdriver/lib'),
+    'Moodle\\BehatExtension' => array($vendorDir . '/moodlehq/behat-extension/src'),
+    'Behat\\MinkExtension' => array($vendorDir . '/behat/mink-extension/src'),
+    'Behat\\Gherkin' => array($vendorDir . '/behat/gherkin/src'),
 );
