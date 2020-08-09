@@ -1,0 +1,62 @@
+{
+    "name": "mayflower/php-codebrowser",
+    "description": "A code browser that augments the code with information from various QA tools.",
+    "license": "BSD-3-Clause",
+    "homepage": "https://github.com/Mayflower/PHP_CodeBrowser",
+    "authors": [
+        {
+            "name": "Robin Gloster",
+            "email": "robin.gloster@mayflower.de",
+            "role": "developer"
+        },
+        {
+            "name": "Christian Albrecht",
+            "email": "christian.albrecht@mayflower.de",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-dom": "*",
+        "monolog/monolog": "~1.7|~2.0",
+        "phpunit/php-file-iterator": "~2.0",
+        "symfony/console": "~3.4|~4.0|~5.0"
+    },
+    "require-dev": {
+        "humbug/box": "^3.8.3",
+        "mayflower/mo4-coding-standard": "^5.0",
+        "phploc/phploc": "*",
+        "phpmd/phpmd": "1.5.*|~2.6",
+        "phpstan/phpstan": "^0.12.5",
+        "phpunit/phpunit": "~8.4",
+        "sebastian/phpcpd": "*"
+    },
+    "autoload": {
+        "psr-0": {"PHPCodeBrowser\\": "src/"}
+    },
+    "bin": [ "bin/phpcb" ],
+    "scripts": {
+        "demo": [
+            "@clean",
+            "php -c php.ini vendor/bin/phpunit -c phpunit.xml.dist",
+            "phpcpd -q --log-pmd=build/logs/pmd-cpd.xml src || true",
+            "phpmd src xml cleancode,codesize,controversial,design,naming,unusedcode --reportfile build/logs/pmd.xml || true",
+            "phpcs -q --standard=MO4 --report-checkstyle=build/logs/checkstyle.xml src || true",
+            "@browser"
+        ],
+        "nope": [
+            "@clean",
+            "pdepend --quiet --dependency-xml=build/logs/pdepend.xml src || true",
+            "phploc -q --log-xml=build/logs/phploc.xml src || true",
+            "@browser"
+        ],
+        "travis": [
+            "phpcs -s --standard=MO4 src/PHPCodeBrowser/",
+            "phpstan analyse --no-progress --level=1 src/PHPCodeBrowser/",
+            "phpunit"
+        ],
+        "clean": "rm -rf build/logs/* build/code-browser",
+        "browser": "bin/phpcb -l build/logs -o build/code-browser -s src",
+        "phar": "php vendor/bin/box compile"
+    }
+}
